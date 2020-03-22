@@ -5,4 +5,7 @@ $(function () {
   $('.form-conditions').on('click', function () {
     $(this).toggleClass('active')
   });
+  $('.ourWorks__examples-slider').slick({
+    fade: true,
+  })
 });
