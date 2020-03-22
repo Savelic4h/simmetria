@@ -6,6 +6,14 @@ $(function () {
     $(this).toggleClass('active')
   });
   $('.ourWorks__examples-slider').slick({
-    fade: true,
-  })
+    arrows: false,
+    asNavFor: '.ourWorks__examples-slider-preview'
+  });
+  $('.ourWorks__examples-slider-preview').slick({
+    arrows: false,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    asNavFor: '.ourWorks__examples-slider',
+    focusOnSelect: true
+  });
 });
