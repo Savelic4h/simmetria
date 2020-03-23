@@ -421,39 +421,70 @@
   text-align: center;
   margin-bottom: 15px;
 }
-.ourWorks__examples-slider{
+.ourWorks__examples-slider-left,
+.ourWorks__examples-slider-right{
+  cursor: pointer;
   .slick-slide{
     min-height: 305px !important;
-    
   }
 }
-.ourWorks__examples-slider-preview{
+.ourWorks__examples-slider-preview-left,
+.ourWorks__examples-slider-preview-right{
   margin-bottom: 50px;
   .slick-slide{
     max-width: 70px !important;
     max-height: 70px !important;
+    outline: none;
+    & + .slick-slide{
+      margin-left: 10px !important;
+    }
+  }
+  .slick-track{
+    transform: translate3d(0, 0px, 0px) !important ;
+  }
+  .slick-current.slick-active{
+    position: relative;
+    transition: all .3s;
+    &:before{
+      content: '';
+      width: 26px;
+      height: 26px;
+      background-color: $orange;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
   }
 }
-.ourWorks__examples-slider{
+.ourWorks__examples-slider-left,
+.ourWorks__examples-slider-right{
   max-width: 570px !important;
-  border-radius: 13px;
+  .slick-list{
+    max-height: 305px !important;
+    margin-bottom: 10px;
+    box-shadow: 0px 15px 20px 0px rgba(83, 31, 9, 0.25);
+    border-radius: 13px;
+  }
 }
-.ourWorks__slider-item{
+.ourWorks__slider-item-left,
+.ourWorks__slider-item-right{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 13px;
+  outline: none;
 }
-.ourWorks__slider-item-preview{
+.ourWorks__slider-item-preview-left,
+.ourWorks__slider-item-preview-right{
   height: 70px;
   width: 70px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 13px;
-  & + .ourWorks__slider-item-preview{
-    margin-left: 10px;
-  }
+ 
 }
 .ourWorks__examples-descr{
   padding-left: 35px;
@@ -525,5 +556,19 @@
   font-size: 14px;
   color: $orange;
   border-bottom: 1px dashed $orange;
+}
+.ourWorks__item{
+  margin-bottom: 105px;
+}
+.all-works__btn{
+  background: #fff;
+  color:$textBold;
+  font-size: 14px;
+  box-shadow: 0px 15px 20px 0px rgba(83, 31, 9, 0.25);
+  font-weight: 700;
+  border: 1px solid $orange;
+}
+.btn-wrapper{
+ text-align: center;
 }
 @import "media";
