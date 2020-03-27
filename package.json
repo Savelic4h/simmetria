@@ -20,7 +20,8 @@
     "magnific-popup": "^1.1.0",
     "normalize.css": "^8.0.1",
     "rateyo": "^2.3.5",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "swiper": "^5.3.6"
   },
   "dependencies": {
     "animate.css": "^3.7.2"

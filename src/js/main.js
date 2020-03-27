@@ -33,4 +33,11 @@ $(function () {
     asNavFor: '.ourWorks__examples-slider-right',
     focusOnSelect: true
   });
+  var mySwiper = new Swiper('.swiper-container', {
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      draggable: true,
+    },
+  });
+
 });
