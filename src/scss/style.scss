@@ -620,6 +620,7 @@ form{
 .review-label-title{
   font-weight: 700;
   font-size: 48px;
+  line-height: 52px;
   color: #fff;
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -634,117 +635,10 @@ form{
   padding-right: 50px;
 }
 
-
-.partners{
-  padding: 65px 0;
-}
-.partners-title{
-  margin-bottom: 50px;
-}
-.swiper-slide{
-  height: 150px !important;
-  width: 150px !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  background-size: cover !important;
-}
-.swiper-scrollbar{
-  height: 1px !important;
-  background-color: #eaeaea;
-  &:before{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 5px;
-    height: 5px;
-    background-color: $orange;
-    border-radius: 50%;
-    transform: translateY(-40%);
-  }
-  &:after{
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 5px;
-    height: 5px;
-    background-color: $orange;
-    border-radius: 50%;
-    transform: translateY(-40%);
-  }
-}
-.swiper-scrollbar{
-.swiper-scrollbar-drag{
-  position: absolute;
-  width: 68px !important;
-  height: 5px;
-  background-color: $orange;
-  border-radius: 2px;
-  top: -2px;
-  }
-}
 // ------------------------
 // review
 // ------------------------
 
-.review{
-  background-color: #f7f7f7;
-  padding-top: 50px;
-}
-.review__inner{
-  padding-bottom: 65px; 
-}
-.review-video__inner{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 26px;
-}
-.review-video__item{
-  iframe{
-    width: 370px;
-    height: 250px;
-    border-radius: 10px;
-    box-shadow: 0px 15px 20px 0px rgba(83, 31, 9, 0.25); 
-    margin-bottom: 28px;
-  }
-  .review-video__item-descr{
-    font-size: 24px;
-    margin-bottom: 40px;
-  }
-}
-.review-video__author-name{
-  font-size: 18px;
-  font-weight: 700;
-}
-.review-video__author-street{
-  font-size: 14px;
-}
-.review__label{
-  padding: 70px 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.review__worker{
-  position: absolute;
-  right: -100px;
-  bottom: -70px;
-}
-.review-label-suptitle{
-  span{
-    font-weight: 700;
-  }
-}
-.review-title{
-  margin-bottom: 35px;
-  span{
-    display: block;
-    font-weight: 300;
-    font-size: 24px;
-    color: $textBold;
-  }
-}
 // ------------------------
 // contacts
 // ------------------------
@@ -829,7 +723,7 @@ form{
       display: flex;
       justify-content: space-between;
       input{
-       max-width: 370px;
+       max-width: 370px; 
       }
     }
   }
@@ -837,6 +731,10 @@ form{
 .contactn-conditions-wrapper{
   text-align: right;
 }
+.contact-input-wrapper + .contact-input-wrapper{
+  margin-left: 30px;
+}
+
 // ------------------------
 // footer
 // ------------------------
